@@ -1,0 +1,13 @@
+#video-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Define as colunas com tamanho mínimo de 200px */
+    gap: 20px; /* Espaçamento entre os vídeos */
+}
+
+video {
+    width: 100%; /* Garante que o vídeo ocupe todo o espaço disponível */
+    height: auto; /* Mantém a proporção do vídeo */
+    max-width: 100%; /* Define a largura máxima do vídeo */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}

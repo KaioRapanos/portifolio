@@ -1,0 +1,20 @@
+.links {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Define as colunas com tamanho mínimo de 100px */
+    gap: 20px; /* Espaçamento entre os itens */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    list-style-type: none; /* Remove os marcadores padrão da lista */
+    padding: 0;
+}
+
+.links li {
+    text-align: center; /* Centraliza o conteúdo dos itens */
+}
+
+.links img {
+    width: 100%; /* Garante que a imagem ocupe todo o espaço disponível */
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 100px; /* Define a largura máxima da imagem */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}

@@ -1,5 +1,5 @@
 // URL base para a pasta "assets" onde vou colocar os videos
-const baseUrl = 'assets/videos';
+const baseUrl = 'assets/videos/';
 
 // Função para carregar as videos da pasta assets
 async function carregarVideos(){
