@@ -1,0 +1,7 @@
+#contato {
+    display: flex; /* Torna o contêiner do footer um flex container */
+}
+
+#contato > div {
+    flex: 1; /* Faz com que as divs ocupem a mesma largura */
+}

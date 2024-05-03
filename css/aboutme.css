@@ -9,11 +9,13 @@
 }
 
 #sobremim h1{
+    font-size: 50px;
     color: #fff;
     text-align: center;
 }
 
 #sobremim p{
+    font-size: 18px;
     color: #fff;
     text-align: center;
     line-height: 2.5;

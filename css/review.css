@@ -1,11 +1,15 @@
 #critica{
-    color: #fff;
     background-color: #000;
     display: flex;
 }
 
 #critica p{
+    font-size: 18px;
     width: 50%;
     padding: 0 20px;
     block-size: border-box;
+    color: #fff;
+    text-align: center;
+    line-height: 2.5;
+    padding: 50px;
 }
