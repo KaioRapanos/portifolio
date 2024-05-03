@@ -1,19 +1,28 @@
 .projetos {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Define as colunas com tamanho mínimo de 200px */
     gap: 10px; /* Espaçamento entre os itens */
     list-style-type: none; /* Remove os marcadores padrão da lista */
-    padding: 0;
+    padding: 0px;
 }
 
 .projetos li {
-    background-color: #f0f0f0; /* Cor de fundo dos itens */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 200px;
+    background-image: url('../assets/images/controleplay.png'); /* Cor de fundo dos itens */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 10px; /* Espaçamento interno dos itens */
     border-radius: 5px; /* Bordas arredondadas */
 }
 
 .projetos a {
+    background-color: #000;
     text-decoration: none; /* Remove a decoração de texto dos links */
-    color: #333; /* Cor do texto dos links */
+    color: #fff; /* Cor do texto dos links */
     font-weight: bold; /* Deixa o texto em negrito */
 }
