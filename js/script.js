@@ -17,7 +17,7 @@ async function carregarVideos(){
         const videoLinks = Array.from(links)
             .map(link => link.href)
             .filter(href => href.endsWith('.mp4'));
-        
+        console.log('ok');
         //Retornar a lista de URLs dos videos
         return videoLinks.map(link => baseUrl + link.split('/').pop());
     } catch (error){
@@ -36,6 +36,7 @@ async function adicionarVideos(){
         videoElement.src = url;
         videoElement.controls = true;
         container.appendChild(videoElement);
+        console.log("ok");
     })
 }
 // Seletor da lista
@@ -54,5 +55,49 @@ btnEsquerda.addEventListener('click', () => {
 btnDireita.addEventListener('click', () => {
     listaProjetos.scrollBy({ left: 200, behavior: 'smooth' });
 });
+
+const caminhoFlags = [
+    "../assets/flags/java.png",
+    "../assets/flags/C.png",
+    "../assets/flags/js.png",
+    "../assets/flags/Angular.png",
+    "../assets/flags/react.png",
+    "../assets/flags/spring.png",
+    "../assets/flags/type.png",
+    "../assets/flags/mongo.png",
+    "../assets/flags/mysql.png",
+    "../assets/flags/git.png",
+    "../assets/flags/github.png",
+    "../assets/flags/kotlin.png",
+    "../assets/flags/python.png",
+]
+
+function adicionarFlags() {
+    const divFlags = document.getElementById("flags");
+
+    caminhoFlags.forEach(caminho => {
+        const imagem = document.createElement("img");
+        imagem.src = caminho;
+        divFlags.appendChild(imagem);
+    })
+
+}
 //Chamar a função para adicionar os videos ao carregar a pagina
-window.onload = adicionarVideos;
+
+function addLoadEvent(func) {
+    var oldonload = window.onload;
+    if (typeof window.onload != 'function') {
+      window.onload = func;
+    }
+    else {
+      window.onload = function() {
+       if (oldonload) {
+        oldonload();
+       }
+       func();
+     }
+    }
+  }
+
+  addLoadEvent(adicionarVideos);
+  addLoadEvent(adicionarFlags);

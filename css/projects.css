@@ -28,6 +28,9 @@
     font-weight: 400;
     font-style: normal;
 }
+.nav-btn {
+    display: none;
+}
 
 /* Estilos para telas com largura máxima de 414px e altura máxima de 896px */
 @media only screen and (max-width: 414px) and (max-height: 896px) {
