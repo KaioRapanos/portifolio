@@ -28,3 +28,67 @@
     font-weight: 400;
     font-style: normal;
 }
+
+/* Estilos para telas com largura máxima de 414px e altura máxima de 896px */
+@media only screen and (max-width: 414px) and (max-height: 896px) {
+    .projetos {
+        position: relative;
+        display: grid;
+        grid-auto-flow: column;
+        scroll-behavior: auto;
+        gap: 1.2rem;
+        overflow-y: auto;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+    }
+
+    .container {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .projetos {
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        padding-bottom: 20px;
+        margin-bottom: 0;
+    }
+    
+    .projetos li {
+        
+        min-width: 200px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .projetos a {
+        white-space: normal;
+    }
+
+    /* Estilização para os botões de navegação */
+    .nav-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 999;
+    }
+    
+    .nav-btn.left {
+        left: 10px;
+    }
+    
+    .nav-btn.right {
+        right: 10px;
+    }
+}

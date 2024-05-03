@@ -38,6 +38,21 @@ async function adicionarVideos(){
         container.appendChild(videoElement);
     })
 }
+// Seletor da lista
+const listaProjetos = document.querySelector('.projetos');
+        
+// Seletor dos botões de navegação
+const btnEsquerda = document.querySelector('.nav-btn.left');
+const btnDireita = document.querySelector('.nav-btn.right');
 
+// Função para rolar a lista para a esquerda
+btnEsquerda.addEventListener('click', () => {
+    listaProjetos.scrollBy({ left: -200, behavior: 'smooth' });
+});
+
+// Função para rolar a lista para a direita
+btnDireita.addEventListener('click', () => {
+    listaProjetos.scrollBy({ left: 200, behavior: 'smooth' });
+});
 //Chamar a função para adicionar os videos ao carregar a pagina
 window.onload = adicionarVideos;
