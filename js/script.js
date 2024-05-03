@@ -17,7 +17,6 @@ async function carregarVideos(){
         const videoLinks = Array.from(links)
             .map(link => link.href)
             .filter(href => href.endsWith('.mp4'));
-        console.log('ok');
         //Retornar a lista de URLs dos videos
         return videoLinks.map(link => baseUrl + link.split('/').pop());
     } catch (error){
@@ -36,9 +35,9 @@ async function adicionarVideos(){
         videoElement.src = url;
         videoElement.controls = true;
         container.appendChild(videoElement);
-        console.log("ok");
     })
 }
+
 // Seletor da lista
 const listaProjetos = document.querySelector('.projetos');
         
