@@ -56,19 +56,19 @@ btnDireita.addEventListener('click', () => {
 });
 
 const caminhoFlags = [
-    "../assets/flags/java.png",
-    "../assets/flags/C.png",
-    "../assets/flags/js.png",
-    "../assets/flags/Angular.png",
-    "../assets/flags/react.png",
-    "../assets/flags/spring.png",
-    "../assets/flags/type.png",
-    "../assets/flags/mongo.png",
-    "../assets/flags/mysql.png",
-    "../assets/flags/git.png",
-    "../assets/flags/github.png",
-    "../assets/flags/kotlin.png",
-    "../assets/flags/python.png",
+    "/assets/flags/java.png",
+    "/assets/flags/C.png",
+    "/assets/flags/js.png",
+    "/assets/flags/Angular.png",
+    "/assets/flags/react.png",
+    "/assets/flags/spring.png",
+    "/assets/flags/type.png",
+    "/assets/flags/mongo.png",
+    "/assets/flags/mysql.png",
+    "/assets/flags/git.png",
+    "/assets/flags/github.png",
+    "/assets/flags/kotlin.png",
+    "/assets/flags/python.png",
 ]
 
 function adicionarFlags() {
