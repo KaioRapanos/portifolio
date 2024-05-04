@@ -1,5 +1,5 @@
 // URL base para a pasta "assets" onde vou colocar os videos
-const baseUrl = 'assets/videos/';
+const baseUrl = 'portifolio/assets/videos/';
 
 // Função para carregar as videos da pasta assets
 async function carregarVideos(){
@@ -56,19 +56,19 @@ btnDireita.addEventListener('click', () => {
 });
 
 const caminhoFlags = [
-    "/assets/flags/java.png",
-    "/assets/flags/C.png",
-    "/assets/flags/js.png",
-    "/assets/flags/Angular.png",
-    "/assets/flags/react.png",
-    "/assets/flags/spring.png",
-    "/assets/flags/type.png",
-    "/assets/flags/mongo.png",
-    "/assets/flags/mysql.png",
-    "/assets/flags/git.png",
-    "/assets/flags/github.png",
-    "/assets/flags/kotlin.png",
-    "/assets/flags/python.png",
+    "portifolio/assets/flags/java.png",
+    "portifolio/assets/flags/C.png",
+    "portifolio/assets/flags/js.png",
+    "portifolio/assets/flags/Angular.png",
+    "portifolio/assets/flags/react.png",
+    "portifolio/assets/flags/spring.png",
+    "portifolio/assets/flags/type.png",
+    "portifolio/assets/flags/mongo.png",
+    "portifolio/assets/flags/mysql.png",
+    "portifolio/assets/flags/git.png",
+    "portifolio/assets/flags/github.png",
+    "portifolio/assets/flags/kotlin.png",
+    "portifolio/assets/flags/python.png",
 ]
 
 function adicionarFlags() {
