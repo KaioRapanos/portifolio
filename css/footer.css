@@ -24,3 +24,19 @@
         height: 200px;
     }
 }
+
+.circle-out-hesitate {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.circle-out-hesitate a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ 
