@@ -71,15 +71,24 @@ const caminhoFlags = [
     "/assets/images/python.png",
 ]
 
-function adicionarFlags() {
+async function adicionarFlags() {
     const divFlags = document.getElementById("flags");
+    const promises = [];
 
     caminhoFlags.forEach(caminho => {
         const imagem = document.createElement("img");
+        const promise = new Promise((resolve, reject) => {
+            imagem.onload = resolve;
+            imagem.onerror = reject;
+        });
+
         imagem.src = caminho;
         divFlags.appendChild(imagem);
-    })
+        promises.push(promise);
+    });
 
+    await Promise.all(promises);
+    console.log("ok ok ok");
 }
 //Chamar a função para adicionar os videos ao carregar a pagina
 
